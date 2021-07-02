@@ -1,0 +1,47 @@
+// 分店列表样式
+.branch_list {
+    .branch_item {
+        padding: 10px 13px;
+        position: relative;
+        color: #444;
+        &.active {
+            background: #53a0f4;
+            color: #fff;
+        }
+        &:not(:last-child) {
+            border-bottom: 1px solid #ddd;
+        }
+        .branch_info {
+            display: flex;
+            font-size: 14px;
+            margin-bottom: 5px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            .name {
+                flex: 1;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                margin-left: 5px;
+            }
+        }
+    }
+}
+
+.popup_footer {
+    border-top: 1px solid #ddd;
+    height: 40px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+.no_data {
+    height: 50px;
+    line-height: 50px;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center !important;
+}

@@ -1,0 +1,102 @@
+// 下划线
+.voucher_no {
+    text-decoration-line: underline;
+}
+
+.cont {
+    padding-bottom: 50px;
+    overflow: auto;
+}
+
+.data_area {
+    margin-top: 120px;
+}
+
+.sale_branch {
+    padding: 2px 8px 8px 8px;
+}
+
+.sale_item {
+    margin-top: 10px;
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid #ddd;
+    .order_header {
+        display: flex;
+        justify-content: space-between;
+        color: #fff;
+        font-size: 15px;
+        padding: 12px 10px;
+        border-bottom: 1px solid #ddd;
+        .sheetNo {
+            color: #48d0ff;
+            font-weight: bold;
+        }
+    }
+    .order_cont {
+        padding: 10px 8px;
+        .cont_info {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            margin-bottom: 15px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .order_footer {
+        padding: 6px 8px;
+        .footer_info {
+            display: flex;
+            justify-content: flex-end;
+            button {
+                margin-right: 12px;
+                padding: 8px 30px;
+                height: 36px;
+                border-radius: 5px;
+                font-size: 15px;
+                color: #fff;
+                &.detail {
+                    background: #48d0ff;
+                }
+                &.delete {
+                    background: #f75454;
+                }
+                &.approve {
+                    background: #ffb648;
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+
+.sale_item .order_cont .cont_info.start {
+    justify-content: start;
+}
+
+.flex {
+    flex: 1;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    .footer_group {
+        background: #fff;
+        .add {
+            width: 100%;
+            height: 50px;
+            color: #fff;
+            background: #48d0ff;
+            border: 0;
+            font-size: 18px;
+        }
+    }
+}
